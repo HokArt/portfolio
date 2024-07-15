@@ -12,7 +12,17 @@ module.exports = {
         "gradient-conic":
           "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
       },
-    },
+      animation: {
+        'spin-slow': 'spin 3s linear infinite',
+        'logo-cloud': 'logo-cloud 30s linear infinite',
+      },
+      keyframes: {
+        'logo-cloud': {
+          from: { transform: 'translateX(0)' },
+          to: { transform: 'translateX(calc(-100% - 4rem))' }
+        }
+      }
+    }
   },
   plugins: [],
 };
