@@ -45,9 +45,9 @@ const logos = [
 
 const AnimatedLogoCloud = () => {
   return (
-    <div className="w-2/4 ">
+    <div className="w-2/4 max-md:w-11/12">
       <div>
-        <h1 className='ml-5 pt-5 text-white font-bold text-2xl'>Skills</h1>
+        <h1 className='ml-5 pt-5 text-white font-bold text-2xl max-[375px]:text-center max-[500px]:text-center'>Skills</h1>
         <div
           className="group relative mt-5 flex gap-6 overflow-hidden "
           style={{

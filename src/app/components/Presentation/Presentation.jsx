@@ -6,7 +6,7 @@ const Presentation = () => {
 
   return (
     <>
-      <header className='flex'>
+      <header className='flex max-sm:justify-center'>
         <Profile/>
       </header>
     </>

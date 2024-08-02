@@ -56,7 +56,7 @@ const TestimonialCarousel = () => {
   }
 
   return (
-    <section className="absolute bottom-0 right-0 w-2/4 h-[95%] py-12 md:py-24 flex justify-center">
+    <section className="absolute bottom-0 right-0 w-2/4 h-[95%] py-12 md:py-24 flex justify-center max-md:relative max-md:w-full">
       <div className=" w-full max-w-2xl">
         <AnimatePresence mode="popLayout">
           <motion.div

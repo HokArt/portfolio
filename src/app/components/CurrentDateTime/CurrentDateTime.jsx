@@ -25,11 +25,11 @@ const CurrentDateTime = () => {
 
   return (
     <>
-      <div className='w-2/4 flex flex-col items-center mt-5 text-white'>
-        <p className='text-2xl font-semibold '>
+      <div className='w-2/4 flex flex-col items-center  mt-2 max-md:mt-auto text-white max-md:pt-8 max-[375px]:w-full max-[500px]:w-full'>
+        <p className='text-[1.5rem] max-md:text-[1.4rem] font-semibold '>
           {formattedDate} 
         </p>
-        <p className='text-[7.5vw] pl-1'>
+        <p className='text-[5.75rem] max-md:text-[5rem] pl-1'>
         {hours} : {minutes}
         </p>
       </div>

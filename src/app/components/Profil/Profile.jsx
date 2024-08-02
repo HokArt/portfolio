@@ -12,7 +12,7 @@ const Profile = () => {
   }
 
   return (
-    <>
+    <div className='flex max-sm:flex-col max-sm:justify-center items-center'>
       <Image
         src={onepiece}
         alt='onepiece'
@@ -23,12 +23,12 @@ const Profile = () => {
         <h1 id='edem' className='text-2xl font-bold'>
           {user.firstName} {user.lastName}
         </h1>
-        <h2 className=' pt-6 font-semibold'>
+        <h2 className=' pt-6 font-semibold max-[375px]:text-center max-sm:text-center'>
           {user.profession} 
         </h2>
         <IconsLink/>
       </div>
-    </>
+    </div>
   )
 }
 

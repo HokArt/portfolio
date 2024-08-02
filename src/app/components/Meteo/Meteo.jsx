@@ -1,7 +1,8 @@
 "use client"
 import React, { useState, useEffect, useCallback, useMemo } from 'react';
 import Image from 'next/image';
-import BounceLoader from '../BounceLoader/BounceLoader';
+// import BounceLoader from '../BounceLoader/BounceLoader';
+import BounceLoad from '../BounceLoader/BounceLoad';
 
 const Meteo = () => {
   const [city, setCity] = useState('lome');
@@ -23,7 +24,7 @@ const Meteo = () => {
       const response = await fetch(url);
       const data = await response.json();
       setWeatherData(data);
-      console.log(data);
+      // console.log(data);
     } catch (error) {
       console.error(error);
     }
@@ -34,9 +35,9 @@ const Meteo = () => {
   }, [city]);
 
   return (
-    <div className='absolute top-0 right-0 w-2/4 pl-3'>
+    <div className='w-2/4 pl-3 max-[375px]:w-full max-[500px]:w-full'>
       {weatherData ? (
-        <div className='grid grid-cols-2 mt-10'>
+        <div className='grid grid-cols-2 mt-5 '>
           <p className='flex justify-center items-center'>
             <strong>{weatherData.name}</strong>
           </p>
@@ -56,13 +57,13 @@ const Meteo = () => {
               alt='Icône météo'
             />
           </span>
-          <form onSubmit={handleSearch} className='flex'>
+          <form onSubmit={handleSearch} className='flex max-[500px]:ml-[15vw]'>
             <input
               type='text'
               value={input}
               onChange={(e) => setInput(e.target.value)}
-              placeholder='Ville'
-              className='bg-transparent border outline-none rounded-lg mr-5 caret-white placeholder:text-white placeholder:italic text-white white pl-5'
+              placeholder='Ville / Pays'
+              className='bg-transparent border outline-none rounded-lg mr-5 caret-white placeholder:text-white placeholder:italic text-white white pl-5 max-sm:pl-3 max-sm:mr-1'
             />
             <button type='submit' className='text-white border rounded-lg px-2'>
               Search
@@ -71,7 +72,7 @@ const Meteo = () => {
         </div>
       ) : (
         <div className='h-[12.5rem] flex justify-center items-center'>
-          <BounceLoader />
+          <BounceLoad />
         </div>
       )}
     </div>
