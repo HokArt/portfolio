@@ -57,13 +57,13 @@ const Meteo = () => {
               alt='Icône météo'
             />
           </span>
-          <form onSubmit={handleSearch} className='flex max-[500px]:ml-[15vw] max-[375px]:ml-5 max-[345px]:ml-[2vw]'>
+          <form onSubmit={handleSearch} className='flex max-[375px]:ml-5 '>
             <input
               type='text'
               value={input}
               onChange={(e) => setInput(e.target.value)}
               placeholder='Ville / Pays'
-              className='bg-transparent border outline-none rounded-lg mr-5 caret-white placeholder:text-white placeholder:italic text-white white pl-5 max-sm:pl-3 max-sm:mr-1'
+              className='bg-transparent border outline-none rounded-lg mr-5 caret-white placeholder:text-white placeholder:italic text-white white pl-5 max-sm:pl-3 max-sm:mr-1 max-[500px]:ml-[20vw] max-[375px]:ml-[6vw] max-[345px]:ml-[2vw] max-[300px]:ml-[-4.5vw]'
             />
             <button type='submit' className='text-white border rounded-lg px-2'>
               Search
