@@ -20,7 +20,7 @@ const Profile = () => {
         priority
       />
       <div className='pt-10 pl-2 text-white '>
-        <h1 id='edem' className='text-2xl font-bold'>
+        <h1 id='edem' className='text-2xl font-bold max-[345px]:text-xl max-[345px]:text-center'>
           {user.firstName} {user.lastName}
         </h1>
         <h2 className=' pt-6 font-semibold max-[375px]:text-center max-sm:text-center'>

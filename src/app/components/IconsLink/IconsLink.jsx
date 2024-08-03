@@ -4,7 +4,7 @@ import { AiFillGithub, AiOutlineX, AiOutlineTikTok, AiOutlineMail, AiOutlineLink
 const IconsLink = () => {
   
   return (
-    <div className="flex justify-center space-x-6 pt-8 text-white">
+    <div className="flex justify-center space-x-6 pt-8 text-white max-[345px]:space-x-4">
       <a href="https://github.com/HokArt" target="_blank" rel="noopener noreferrer">
         <AiFillGithub className="size-8 cursor-pointer transition-all ease-in duration-500 hover:text-black "/>
       </a>
