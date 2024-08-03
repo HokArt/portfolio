@@ -18,7 +18,7 @@ export default function Home() {
   
   return (
     <main className="h-screen w-[100%] bg-[url('./Images/onepiece.png')] bg-no-repeat bg-cover flex justify-center items-center" property='true' >
-      <div className="relative bg-white/10  h-[90%] w-[90%] rounded-lg max-md:overflow-y-scroll max-md:overscroll-contain overflow-x-hidden">
+      <div className="relative bg-white/10  h-[90%] w-[90%] rounded-lg max-md:overflow-y-scroll max-md:overscroll-contain overflow-x-hidden max-md:w-[95%] max-md:h-[98%]">
         <Presentation/>
         <SkillsList/>
         <ProjectsList/>
