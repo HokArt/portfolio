@@ -57,7 +57,7 @@ const Meteo = () => {
               alt='Icône météo'
             />
           </span>
-          <form onSubmit={handleSearch} className='flex max-[500px]:ml-[15vw] max-[375px]:ml-5 max-[345px]:ml-[5vw]'>
+          <form onSubmit={handleSearch} className='flex max-[500px]:ml-[15vw] max-[375px]:ml-5 max-[345px]:ml-[2vw]'>
             <input
               type='text'
               value={input}
