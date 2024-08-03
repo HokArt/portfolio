@@ -3,14 +3,14 @@ import config from './postcss.config.mjs';
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   images: {
-    domains: ['openweathermap.org']
+    remotePatterns : [
+      {
+        protocol: 'https',
+        hostname: 'openweathermap.org',
+        pathname: '/**'
+      },
+    ],
   },
-  webpack: (config, { dev }) => {
-    if (dev) {
-      config.devtool = 'source-map'
-    }
-    return config
-  }
 };
 
 export default nextConfig;
