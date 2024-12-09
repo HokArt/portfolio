@@ -1,5 +1,6 @@
 import Image from 'next/image'
-import onepiece from '../../Images/onepiece.png'
+// import onepiece from '../../Images/onepiece.png'
+import hk from '../../Images/hk.jpg'
 import IconsLink from '../IconsLink/IconsLink'
 
 
@@ -14,7 +15,7 @@ const Profile = () => {
   return (
     <div className='flex max-sm:flex-col max-sm:justify-center items-center'>
       <Image
-        src={onepiece}
+        src={hk}
         alt='onepiece'
         className='h-48 w-48 rounded-full mt-3 ml-3 mr-3' 
         priority
